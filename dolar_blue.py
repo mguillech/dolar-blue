@@ -18,6 +18,6 @@ ambito = PyQuery(requests.get(AMBITO_URL, headers=headers).content)
 print 'cordobaguias | preciodolarblue'
 print '-' * 30
 print '%s | %s' % (cg, ' / '.join(pdb))
-print 'Cueva (Ambito): %s | %s' % (ambito.find('#venta>big').text().replace(',', '.'),
-                                   ambito.find("#compra>big").text().replace(',', '.'))
+print 'Cueva (Ambito): %s | %s' % (ambito.find('#compra>big').text().replace(',', '.'),
+                                   ambito.find("#venta>big").text().replace(',', '.'))
 
